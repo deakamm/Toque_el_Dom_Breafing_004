@@ -1,0 +1,364 @@
+/* Colores
+ */
+:root {
+    --celeste: #8ECAE6;
+    --azul-claro: #219EBC;
+    --azul-oscuro: #023047;
+    --amarillo: #FFB703;
+    --naranja: #FB8500;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
+/* Quitamos bordes y paddings Cris */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*******navbar*/
+header {
+    /* width: 100%; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: auto;
+    padding: 10px;
+    margin: 10px 15px;
+    /* height: 80px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    border-radius: 2em;
+
+
+}
+
+.drummusic {
+    background-color: #ffb703;
+    border: 1px solid #ffb703;
+
+    mix-blend-mode: difference;
+    z-index: 2;
+}
+
+.drummusicfake {
+    height: 80px;
+
+    background-color: black;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav img {
+    width: 65px;
+    height: 60px;
+    border: 5px solid #023047;
+    border-radius: 120em;
+    background-color: white;
+    /* margin: 0 1000px 0 30px; */
+}
+
+header div {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.background {
+    display: flex;
+    align-items: center;
+
+}
+
+div button {
+    width: 92px;
+    height: 39px;
+    border: 1px solid #ffb703;
+    border-radius: 1em;
+    background: #023047;
+    color: white;
+    cursor: pointer;
+
+    /* width: 120px;
+    height: 55px;
+    border: 1px solid #ffb703;
+    border-radius: 1em;
+    background: #023047;
+    color: white;
+    cursor: pointer;
+    font-size: 18px; */
+
+}
+
+button:hover {
+    background-color: #fb8500;
+    color: black;
+
+}
+
+.botones {
+    display: flex;
+}
+
+/*.....*/
+
+html {
+    font-size: 62.5%;
+}
+
+/* Cristian CSS */
+.text-smol {
+    padding: 10px;
+    font-size: 1.7rem;
+    text-align: justify;
+    padding: 22px;
+
+}
+
+.text-padding {
+
+    padding: 0 333px 24px 390px;
+}
+
+.info__container {
+    width: 100%;
+    /* height: 783px; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__titulo {
+    /* height: 102px; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+    transition: 1s;
+}
+
+.info__titulo {
+    font-size: 6.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: var(--amarillo);
+}
+
+.info__parrafo {
+    width: 100%;
+    /* height: 130px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.info__parrafo p {
+    width: 42%;
+    font-size: 1.8rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: var(--azul-oscuro);
+    text-align: justify;
+}
+
+.info__descripcion {
+    width: 100%;
+    /* height: 550px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__img {
+    width: 50%;
+    height: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #023047;
+    border: 5px solid #023047;
+    border-radius: 50em;
+}
+
+.info__contexto {
+    width: 34%;
+}
+
+.info__contexto p {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    color: var(--azul-oscuro);
+
+}
+
+.info__button {
+    width: 223px;
+    height: 56px;
+    border-radius: 25px;
+    background-color: #219EBC;
+    border: none;
+    font-size: 3.5rem;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+
+.div_instrument{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.div_instrument h2{
+    font-size: 4rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.div_instrument p{
+    font-size: 1.7rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Cristian CSS */
+
+/* Hero */
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+/* .container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+} */
+
+.hero-image {
+    width: 40%;
+    padding: 50px;
+    z-index: -2;
+}
+
+.hidden {
+    display: none;
+}
+
+/* css drums*/
+#Drums>circle {
+    opacity: 0.2;
+}
+
+.clicked {
+    /* fill: #ffff936e; */
+    fill: #f1deaeba;
+    filter: blur(10px);
+    transition: 0.1s;
+
+}
+
+.pedal {
+    opacity: 0.1;
+
+}
+
+#keys {
+    pointer-events: none;
+}
+
+.bateria__titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.bateria__titulo h2 {
+    font-size: 3.4rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+.bateria_container {
+    width: 100%;
+}
+
+.bateria_container svg {
+    width: 100%;
+}
+
+
+/* animaitinl */
+
+.smull {
+    font-size: 30px;
+    padding-right: 117px;
+}
+
+.top-sticky {
+    position: sticky;
+    top: 31px
+}
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color:#023047;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contendor__top{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor__bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenedor-telefono {
+        font-size: medium;
+        color: greenyellow;
+        justify-content: space-around;
+    }
+
